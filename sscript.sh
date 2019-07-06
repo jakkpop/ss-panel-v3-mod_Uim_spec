@@ -66,12 +66,12 @@ echo -e "${Info} 检测安装git、unzip、crontab工具已完成"
 sleep 1
 ##下载解压拷贝源码
 echo -e "${Info} 正在下载解压处理程序源码"
-wget -N --no-check-certificate "https://raw.githubusercontent.com/jakkpop/ss-panel-v3-mod_Uim_spec/master/SSPanel-Uim-dev_spec.zip"
-unzip dev.zip
+wget -N --no-check-certificate "https://github.com/jakkpop/ss-panel-v3-mod_Uim_spec/blob/master/spec.zip"
+unzip spec.zip
 cd ss-panel-v3-mod_Uim-dev
 mv * .[^.]* /www/wwwroot/$website/
 cd ..
-rm -rf dev.zip ss-panel-v3-mod_Uim-dev/
+rm -rf spec.zip ss-panel-v3-mod_Uim-dev/
 echo -e "${Info} 下载解压处理程序源码已完成"
 sleep 1
 ##处理php函数
